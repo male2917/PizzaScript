@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<title>Build Your Pizza</title>
+<meta charset=utf-8 />
+<style>
+#byop{
+border-radius:5px;
+background-color:#D3D3D3;
+padding:15px;
+display:flex;
+flex-direction:column;
+}
+
+#delivery{
+border-radius:5px;
+background-color:white;
+padding:15px;
+}
+
+#size{
+border-radius:5px;
+background-color:white;
+padding:15px;
+}
+
+#sauce{
+border-radius:5px;
+background-color:white;
+padding:15px;
+}
+
+#ingredients{
+border-radius:5px;
+background-color:white;
+padding:15px;
+}
+
+</style>
+</head>
+
+<body>
+<div id="byop">
+<form id="delivery">
+<label for="delivery">Delivery Method:</label>
+<br>
+
+<input type="radio" id="delivery" name="delivery_method" value="delivery"></input>
+<label for="delivery">Delivery</label>
+
+<input type="radio" id="carry_Out" name="delivery_method" value="carry_Out"></input>
+<label for="medium">Carry Out</label>
+</form>
+<br>
+
+<form id="size">
+<label for="size">Pizza Size:</label>
+<br>
+<input type="radio" id="small" name="pizza_Size" value="small"></input>
+<label for="small">Small</label>
+
+<input type="radio" id="medium" name="pizza_Size" value="medium"></input>
+<label for="medium">Medium</label>
+
+<input type="radio" id="large" name="pizza_Size" value="large"></input>
+<label for="large">Large</label>
+</form>
+<br>
+
+<form id="sauce">
+<label for="Sauce">Pizza Sauce:</label>
+<br>
+<input type="radio" id="pizza" name="sauce" value="pizza"></input>
+<label for="pizza">Pizza Sauce</label>
+
+<input type="radio" id="donair" name="sauce" value="donair"></input>
+<label for="donair">Donair Sauce</label>
+
+<input type="radio" id="bbq" name="sauce" value="bbq"></input>
+<label for="bbq">BBQ Sauce</label>
+
+<input type="radio" id="ranch" name="sauce" value="ranch"></input>
+<label for="ranch">Ranch Sauce</label>
+</form>
+<br>
+
+<form id="ingredients">
+<label for="ingredients">Pizza Ingredients:</label>
+<br>
+<input type="checkbox" id="pepperoni" name="toppings" value="pepperoni"></input>
+<label for="medium">Pepperoni</label>
+
+<input type="checkbox" id="ham" name="toppings" value="ham"></input>
+<label for="medium">Ham</label>
+
+<input type="checkbox" id="bacon" name="toppings" value="bacon"></input>
+<label for="medium">Bacon</label>
+
+<input type="checkbox" id="pineapple" name="toppings" value="pineapple"></input>
+<label for="medium">Pineapple</label>
+</form>
+<br>
+</div>
+</body>
+</html>
