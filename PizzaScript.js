@@ -37,7 +37,7 @@ function order_method() {
 }
 
 function  pizza_sauce () {
-    var FindSauce = document.getElementsByName('radioBlank');
+    var FindSauce = document.getElementsByName('radioSauce');
  
             for (i = 0; i < FindSauce.length; i++) {
                 if (FindSauce[i].checked)
