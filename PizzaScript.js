@@ -3,7 +3,8 @@
 // April 29th
 
 
-var orderMethod
+var method = ""
+var sauce = ""
 var size = 0
 var cheese = false
 
@@ -32,7 +33,7 @@ function order_method() {
  
             for (i = 0; i < FindMethod.length; i++) {
                 if (FindSize[i].checked)
-                        size= FindSize[i].value;
+                        method= FindSize[i].value;
             }
 }
 
@@ -41,6 +42,6 @@ function  pizza_sauce () {
  
             for (i = 0; i < FindSauce.length; i++) {
                 if (FindSauce[i].checked)
-                        size= FindSauce[i].value;
+                        sauce= FindSauce[i].value;
             }       
 }
