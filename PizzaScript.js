@@ -4,6 +4,7 @@
 
 console.log("Script Start")
 
+//---------------------Obtaining Variables----------------------//
 var orderMethod = "";
 var size = "";
 var sauces = "";
@@ -50,3 +51,15 @@ function  pizza_sauce () {
             console.log(sauces);   
 }
 
+//-----------------------Canvas work----------------------
+
+let canvas = document.getElementById("pizzaCanvas");
+let c = canvas.getContext("2d");
+
+c.beginPath();
+c.arc(200,200,100,0,Math.PI*2);
+c.strokeStyle = "#bf710a";
+c.fillStyle = "#d98b25";
+c.lineWidth = 10;
+c.fill();
+c.stroke();  
