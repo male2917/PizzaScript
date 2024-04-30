@@ -1,0 +1,39 @@
+﻿/*
+Created By Alex Stewart
+For Pizza Building
+Date April 30th 2024
+*/
+
+#byop{
+border-radius:5px;
+background-color:#D3D3D3;
+padding:15px;
+display:flex;
+flex-direction:column;
+}
+
+#delivery{
+border-radius:5px;
+background-color:white;
+padding:15px;
+}
+
+#size{
+border-radius:5px;
+background-color:white;
+padding:15px;
+}
+
+#sauce{
+border-radius:5px;
+background-color:white;
+padding:15px;
+}
+
+#ingredients{
+border-radius:5px;
+background-color:white;
+padding:15px;
+}
+
+}

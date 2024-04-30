@@ -1,48 +1,19 @@
 <!DOCTYPE HTML>
 <html>
-
+<!-- 
+Created by Alex Stewart
+For Pizza Assignment
+Date April 29 2024
+-->
 <head>
 <title>Build Your Pizza</title>
 <meta charset=utf-8 />
-<style>
-#byop{
-border-radius:5px;
-background-color:#D3D3D3;
-padding:15px;
-display:flex;
-flex-direction:column;
-}
-
-#delivery{
-border-radius:5px;
-background-color:white;
-padding:15px;
-}
-
-#size{
-border-radius:5px;
-background-color:white;
-padding:15px;
-}
-
-#sauce{
-border-radius:5px;
-background-color:white;
-padding:15px;
-}
-
-#ingredients{
-border-radius:5px;
-background-color:white;
-padding:15px;
-}
-
-</style>
+<link rel="stylesheet" href="pizzabuild.css">
 </head>
 
 <body>
 <div id="byop">
-<form id="delivery">
+<form id="delivery" name="delivery">
 <label for="delivery">Delivery Method:</label>
 <br>
 
@@ -54,7 +25,7 @@ padding:15px;
 </form>
 <br>
 
-<form id="size">
+<form id="size" name="size">
 <label for="size">Pizza Size:</label>
 <br>
 <input type="radio" id="small" name="pizza_Size" value="small"></input>
@@ -68,7 +39,7 @@ padding:15px;
 </form>
 <br>
 
-<form id="sauce">
+<form id="sauce" name="sauce">
 <label for="Sauce">Pizza Sauce:</label>
 <br>
 <input type="radio" id="pizza" name="sauce" value="pizza"></input>
@@ -85,20 +56,20 @@ padding:15px;
 </form>
 <br>
 
-<form id="ingredients">
+<form id="ingredients" name="Ingredients">
 <label for="ingredients">Pizza Ingredients:</label>
 <br>
 <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni"></input>
-<label for="medium">Pepperoni</label>
+<label for="pepperoni">Pepperoni</label>
 
 <input type="checkbox" id="ham" name="toppings" value="ham"></input>
-<label for="medium">Ham</label>
+<label for="ham">Ham</label>
 
 <input type="checkbox" id="bacon" name="toppings" value="bacon"></input>
-<label for="medium">Bacon</label>
+<label for="bacon">Bacon</label>
 
 <input type="checkbox" id="pineapple" name="toppings" value="pineapple"></input>
-<label for="medium">Pineapple</label>
+<label for="pineapple">Pineapple</label>
 </form>
 <br>
 </div>
