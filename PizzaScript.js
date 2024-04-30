@@ -2,46 +2,51 @@
 //CMP621A
 // April 29th
 
+console.log("Script Start")
 
-var method = ""
-var sauce = ""
-var size = 0
-var cheese = false
+var orderMethod = "";
+var size = "";
+var sauces = "";
 
 
-let myMethodForm = document.forms["formMethod"];
-mySizeForm.onchange = function(){order_method()};
+let myMethodForm = document.forms["delivery"];
+myMethodForm.onchange = function(){order_method()};
 
-let mySizeForm = document.forms["formSize"];
+let mySizeForm = document.forms["size"];
 mySizeForm.onchange = function(){pizza_size()};
 
-
-let mySauceForm = document.forms["formSauce"];
-mySizeForm.onchange = function(){pizza_sauce()};
+let mySauceForm = document.forms["sauceForm"];
+mySauceForm.onchange = function(){pizza_sauce()};
 
 function pizza_size () {
-    var FindSize = document.getElementsByName('radioSize');
+    console.log("\nsizefunction");
+    var FindSize = document.getElementsByName('pizza_Size');
  
             for (i = 0; i < FindSize.length; i++) {
                 if (FindSize[i].checked)
                         size= FindSize[i].value;
             }
+            console.log(size);
 }
 
 function order_method() {
-    var FindMethod = document.getElementsByName('radioMethod');
+    console.log("\norderFunction");
+    var FindMethod = document.getElementsByName('delivery_method');
  
             for (i = 0; i < FindMethod.length; i++) {
-                if (FindSize[i].checked)
-                        method= FindSize[i].value;
+                if (FindMethod[i].checked)
+                orderMethod= FindMethod[i].value;
             }
+        console.log(orderMethod);
 }
 
 function  pizza_sauce () {
-    var FindSauce = document.getElementsByName('radioSauce');
- 
+    var FindSauce = document.getElementsByName('sauce');
+    console.log("\nsaucefunction");
             for (i = 0; i < FindSauce.length; i++) {
                 if (FindSauce[i].checked)
-                        sauce= FindSauce[i].value;
-            }       
+                        sauces= FindSauce[i].value;
+            }
+            console.log(sauces);   
 }
+
