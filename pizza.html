@@ -12,6 +12,7 @@ Date April 29 2024
 </head>
 
 <body>
+<div class = "container">
 <div id="byop">
 <form id="delivery" name="delivery">
 <label for="delivery">Delivery Method:</label>
@@ -83,5 +84,18 @@ Date April 29 2024
 </form>
 <br>
 </div>
+<div>
+<canvas id="pizzaCanvas" width="400" height="400" style="border:solid 5px rgb(77, 77, 212);"></canvas> 
+</div>
+</div>
+<script src="PizzaScript.js"></script>
+<style>
+    .container {
+    display:flex;   /*display the box*/
+    border:1px solid black;
+    justify-content: space-between; /*Horizontal control by default*/
+    flex-direction: row;
+    }
+</style>
 </body>
 </html>
