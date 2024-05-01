@@ -1,40 +1,58 @@
-﻿/*
+/*
 Created By Alex Stewart
 For Pizza Building
 Date April 30th 2024
 */
 
+
+/* I moved my Css for the pizza design out of the HTML just so it's out of the way, if not you can move it back, and feel free to delete this comment*/
+
+
+.container {
+    display:flex;   /*display the box*/
+    padding:15px;
+    border:15px solid rgb(94, 68, 185);
+    justify-content: space-around; /*Horizontal control by default*/
+    align-items: center ;
+    flex-direction: row;
+    }
+
 #byop{
-border-radius:5px;
-background-color:#D3D3D3;
-padding:15px;
-display:flex;
-flex-direction:column;
-/* margin could be off sized for a 1080p monitor*/
-margin-right:900px
-}
+    border-radius:5px;
+    background-color:#D3D3D3;
+    padding:15px;
+    display:flex;
+    flex-direction:column;
+    /* margin could be off sized for a 1080p monitor*/
+    margin-right:900px
+    }
+    
+    #delivery{
+    border-radius:5px;
+    background-color:white;
+    padding:15px;
+    }
+    
+    #size{
+    border-radius:5px;
+    background-color:white;
+    padding:15px;
+    }
+    
+    #sauce{
+    border-radius:5px;
+    background-color:white;
+    padding:15px;
+    }
 
-#delivery{
-border-radius:5px;
-background-color:white;
-padding:15px;
-}
-
-#size{
-border-radius:5px;
-background-color:white;
-padding:15px;
-}
-
-#sauce{
-border-radius:5px;
-background-color:white;
-padding:15px;
-}
-
-#ingredients{
-border-radius:5px;
-background-color:white;
-padding:15px;
-}
-}
+    #cheese{
+        border-radius:5px;
+        background-color:white;
+        padding:15px;
+        }
+    
+    #ingredients{
+    border-radius:5px;
+    background-color:white;
+    padding:15px;
+    }
