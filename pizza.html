@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <html>
 <!-- 
 Created by Alex Stewart
@@ -9,9 +9,17 @@ Date April 29 2024
     <title>Build Your Pizza</title>
     <meta charset=utf-8 />
     <link rel="stylesheet" href="pizzabuild.css">
+    <link rel="stylesheet" href="homepage.css">
 </head>
 
 <body>
+<ul>
+  <li><a href="pizzahome.html">Home</a></li>
+  <li><a href="pizza.html">Build Your Pizza</a></li>
+  <li><a href="#contact">Pizzas</a></li>
+ <li style="float:right"><a class="active" href="#about">🛒Cart</a></li>
+</ul>
+
     <div class = "container">
         <div id="byop">
             <form id="delivery" name="delivery">
@@ -98,6 +106,9 @@ Date April 29 2024
 
                 <input type="checkbox" id="pineapple" name="toppings" value="pineapple"></input>
                 <label for="pineapple">Pineapple</label>
+                <br>
+                <input type="checkbox" id="donair_meat" name="toppings" value="donair_meat"></input><!-- need to have 5 toppings-->
+                <label for="donair_meat">Donair Meat</label>
             </form>
             <br>
         </div>

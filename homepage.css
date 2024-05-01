@@ -1,0 +1,32 @@
+﻿/*
+Created By Alex Stewart
+For Navagation Bar
+Date May 1st 2024
+*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #11c5bc;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #ee3a43;
+}
+
+.active {
+  background-color: #ee3a43;
+}
