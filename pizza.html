@@ -6,96 +6,105 @@ For Pizza Assignment
 Date April 29 2024
 -->
 <head>
-<title>Build Your Pizza</title>
-<meta charset=utf-8 />
-<link rel="stylesheet" href="pizzabuild.css">
+    <title>Build Your Pizza</title>
+    <meta charset=utf-8 />
+    <link rel="stylesheet" href="pizzabuild.css">
 </head>
 
 <body>
-<div class = "container">
-<div id="byop">
-<form id="delivery" name="delivery">
-<label for="delivery">Delivery Method:</label>
-<br>
+    <div class = "container">
+        <div id="byop">
+            <form id="delivery" name="delivery">
+                <label for="delivery">Delivery Method:</label>
+                <br>
 
-<input type="radio" id="delivery" name="delivery_method" value="delivery"></input>
-<label for="delivery">Delivery</label>
+                <input type="radio" id="delivery" name="delivery_method" value="delivery"></input>
+                <label for="delivery">Delivery</label>
 
-<input type="radio" id="carry_Out" name="delivery_method" value="carry_Out"></input>
-<label for="medium">Carry Out</label>
-</form>
-<br>
+                <input type="radio" id="carry_Out" name="delivery_method" value="carry_Out"></input>
+                <label for="medium">Carry Out</label>
+            </form>
+            <br>
 
-<form id="size" name="size">
-<label for="size">Pizza Size:</label>
-<br>
-<input type="radio" id="small" name="pizza_Size" value="small"></input>
-<label for="small">Small</label>
-<br>
+            <form id="size" name="size">
+                <label for="size">Pizza Size:</label>
+                <br>
+                <input type="radio" id="small" name="pizza_Size" value="small"></input>
+                <label for="small">Small</label>
+                <br>
 
-<input type="radio" id="medium" name="pizza_Size" value="medium"></input>
-<label for="medium">Medium</label>
-<br>
+                <input type="radio" id="medium" name="pizza_Size" value="medium"></input>
+                <label for="medium">Medium</label>
+                <br>
 
-<input type="radio" id="large" name="pizza_Size" value="large"></input>
-<label for="large">Large</label>
-</form>
-<br>
+                <input type="radio" id="large" name="pizza_Size" value="large"></input>
+                <label for="large">Large</label>
+            </form>
+            <br>
 
-<form id="sauce" name="sauceForm">
-<label for="Sauce">Pizza Sauce:</label>
-<br>
+            <form id="sauce" name="sauceForm">
+                <label for="Sauce">Pizza Sauce:</label>
+                <br>
 
-<input type="radio" id="pizza" name="sauce" value="pizza"></input>
-<label for="pizza">Pizza Sauce</label>
-<br>
+                <input type="radio" id="regular" name="sauce" value="regular"></input>
+                <label for="regular">Regular Sauce</label>
+                <br>
 
-<input type="radio" id="donair" name="sauce" value="donair"></input>
-<label for="donair">Donair Sauce</label>
-<br>
+                <input type="radio" id="donair" name="sauce" value="donair"></input>
+                <label for="donair">Donair Sauce</label>
+                <br>
 
-<input type="radio" id="bbq" name="sauce" value="bbq"></input>
-<label for="bbq">BBQ Sauce</label>
-<br>
+                <input type="radio" id="bbq" name="sauce" value="bbq"></input>
+                <label for="bbq">BBQ Sauce</label>
+                <br>
 
-<input type="radio" id="ranch" name="sauce" value="ranch"></input>
-<label for="ranch">Ranch Sauce</label>
-</form>
-<br>
+                <input type="radio" id="ranch" name="sauce" value="ranch"></input>
+                <label for="ranch">Ranch Sauce</label>
+                <br>
 
-<form id="ingredients" name="Ingredients">
-<label for="ingredients">Pizza Ingredients:</label>
-<br>
+                <input type="radio" id="none" name="sauce" value="none"></input>
+                <label for="none">No Sauce</label>
+                <br>
+            </form>
+            <br>
 
-<input type="checkbox" id="pepperoni" name="toppings" value="pepperoni"></input>
-<label for="pepperoni">Pepperoni</label>
-<br>
+            <form id="cheese" name="cheeseForm">
+                <label for="cheese">Cheese:</label>
+                <br>
+                <input type="radio" id="yesCheese" name="cheese" value="yes"></input>
+                <label for="yesCheese">Regular Cheese</label>
+                <br>
 
-<input type="checkbox" id="ham" name="toppings" value="ham"></input>
-<label for="ham">Ham</label>
-<br>
+                <input type="radio" id="noCheese" name="cheese" value="no"></input>
+                <label for="noCheese">No Cheese</label>
+            </form>
+            <br>
 
-<input type="checkbox" id="bacon" name="toppings" value="bacon"></input>
-<label for="bacon">Bacon</label>
-<br>
+            <form id="ingredients" name="Ingredients">
+                <label for="ingredients">Pizza Toppings:</label>
+                <br>
 
-<input type="checkbox" id="pineapple" name="toppings" value="pineapple"></input>
-<label for="pineapple">Pineapple</label>
-</form>
-<br>
-</div>
-<div>
-<canvas id="pizzaCanvas" width="400" height="400" style="border:solid 5px rgb(77, 77, 212);"></canvas> 
-</div>
-</div>
-<script src="PizzaScript.js"></script>
-<style>
-    .container {
-    display:flex;   /*display the box*/
-    border:1px solid black;
-    justify-content: space-between; /*Horizontal control by default*/
-    flex-direction: row;
-    }
-</style>
+                <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni"></input>
+                <label for="pepperoni">Pepperoni</label>
+                <br>
+
+                <input type="checkbox" id="ham" name="toppings" value="ham"></input>
+                <label for="ham">Ham</label>
+                <br>
+
+                <input type="checkbox" id="bacon" name="toppings" value="bacon"></input>
+                <label for="bacon">Bacon</label>
+                <br>
+
+                <input type="checkbox" id="pineapple" name="toppings" value="pineapple"></input>
+                <label for="pineapple">Pineapple</label>
+            </form>
+            <br>
+        </div>
+        <div>
+        <canvas id="pizzaCanvas" width="600" height="600" style="border:solid 5px rgb(104, 0, 117);"></canvas> 
+        </div>
+    </div>
+    <script src="PizzaScript.js"></script>
 </body>
 </html>
