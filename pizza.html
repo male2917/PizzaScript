@@ -15,9 +15,9 @@ Date April 29 2024
 <body>
 <ul>
   <li><a href="pizzahome.html">Home</a></li>
-  <li><a href="pizza.html">Build Your Pizza</a></li>
+  <li><a class="active" href="pizza.html">Build Your Pizza</a></li>
   <li><a href="pizzasPage.html">Pizzas</a></li>
- <li style="float:right"><a class="active" href="#about">🛒Cart</a></li>
+ <li style="float:right"><a class="active" href="cart.html">🛒Cart</a></li>
 </ul>
 
     <div class = "container">
@@ -27,10 +27,10 @@ Date April 29 2024
                 <br>
 
                 <input type="radio" id="delivery" name="delivery_method" value="delivery"></input>
-                <label for="delivery">Delivery</label>
+                <label for="delivery">Delivery(+$9)</label>
 
                 <input type="radio" id="carry_Out" name="delivery_method" value="carry_Out"></input>
-                <label for="medium">Carry Out</label>
+                <label for="delivery">Carry Out</label>
             </form>
             <br>
 
@@ -38,15 +38,15 @@ Date April 29 2024
                 <label for="size">Pizza Size:</label>
                 <br>
                 <input type="radio" id="small" name="pizza_Size" value="small"></input>
-                <label for="small">Small</label>
+                <label for="small">Small(+11)</label>
                 <br>
 
                 <input type="radio" id="medium" name="pizza_Size" value="medium"></input>
-                <label for="medium">Medium</label>
+                <label for="medium">Medium(+$14)</label>
                 <br>
 
                 <input type="radio" id="large" name="pizza_Size" value="large"></input>
-                <label for="large">Large</label>
+                <label for="large">Large(+$17)</label>
             </form>
             <br>
 
@@ -59,15 +59,15 @@ Date April 29 2024
                 <br>
 
                 <input type="radio" id="donair" name="sauce" value="donair"></input>
-                <label for="donair">Donair Sauce</label>
+                <label for="donair">Donair Sauce(+$3)</label>
                 <br>
 
                 <input type="radio" id="bbq" name="sauce" value="bbq"></input>
-                <label for="bbq">BBQ Sauce</label>
+                <label for="bbq">BBQ Sauce(+$3)</label>
                 <br>
 
                 <input type="radio" id="ranch" name="sauce" value="ranch"></input>
-                <label for="ranch">Ranch Sauce</label>
+                <label for="ranch">Ranch Sauce(+$3)</label>
                 <br>
 
                 <input type="radio" id="none" name="sauce" value="none"></input>
@@ -108,9 +108,10 @@ Date April 29 2024
                 <label for="pineapple">Pineapple</label>
                 <br>
                 <input type="checkbox" id="donair_meat" name="toppings" value="donair_meat"></input><!-- need to have 5 toppings-->
-                <label for="donair_meat">Donair Meat</label>
+                <label for="donair_meat">Donair Meat(+$2)</label>
             </form>
             <br>
+            <div id=cost name=cost>Cost: $</div>
             <button class="button">Add To Cart</button>
         </div>
         <div>

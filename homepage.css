@@ -33,7 +33,6 @@ li a:hover:not(.active) {
 
 .flex-container{
 	display:flex;
-	flex-wrap:nowrap;
 	background-color: #ee3a43;
 }
 
@@ -46,6 +45,7 @@ li a:hover:not(.active) {
 	font-size 30px;
 }
 
+
  .button {
   background-color: #ee3a43;
   border: none;
@@ -56,3 +56,4 @@ li a:hover:not(.active) {
   display: inline-block;
   font-size: 16px;
 
+ }
