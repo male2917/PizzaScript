@@ -1,0 +1,41 @@
+﻿stylesheet
+body{
+margin: 0;
+font-family: Arial, sans-serif;
+}
+
+header {
+background-color:#333;
+color: white;
+padding: 10px 0;
+}
+
+
+main {
+padding: 20px;
+}
+
+.pizza-section {
+display: flex;
+flex-wrap: wrap;
+justify-content: center; 
+align-items: center;
+}
+.pizza-section img {
+max-width: 100%; 
+height: auto;
+margin: 10px;
+}
+
+.small-pizzas {
+display: flex; 
+flex-wrap:. wrap;
+justify-content: center; 
+align-items: center;
+}
+
+.small-pizzas img {
+width: 150px; 
+height: 150px; 
+margin: 10px;
+｝
