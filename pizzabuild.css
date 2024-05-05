@@ -11,7 +11,7 @@ Date April 30th 2024
 .container {
     display:flex;   /*display the box*/
     padding:15px;
-    border:15px solid rgb(94, 68, 185);
+    border:15px solid #ee3a43;
     justify-content: space-around; /*Horizontal control by default*/
     align-items: center ;
     flex-direction: row;
@@ -71,3 +71,9 @@ Date April 30th 2024
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  }
+  
+canvas {
+    border:solid 5px #ee3a43; 
+    background-image:url("pizzaBoard.jpg");
+}
