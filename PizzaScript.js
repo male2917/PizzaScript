@@ -400,7 +400,7 @@ function drawToppings() {           // Start with a small and add larger sizes
                     c.closePath();
 
                     c.strokeStyle = "#ed5180";
-                    c.fillStyle = "#ff82a8  "
+                    c.fillStyle = "#ff82a8";
                     c.lineWidth = 2;    
                     c.fill();
                     c.stroke();
@@ -409,6 +409,46 @@ function drawToppings() {           // Start with a small and add larger sizes
 
     }
     if (bacon == 'yes'){
+        c.beginPath()
+                c.rect(380,325,20,30);
+                c.closePath();
+
+                c.rect(200,245,20,30);
+                c.closePath();
+
+                c.rect(325,200,30,20);
+                c.closePath();
+
+                c.rect(245,380,30,20);
+                c.closePath();
+
+                c.fillStyle = "#b54707";
+                c.strokeStyle = "#e89a41";
+                c.lineWidth = 2; 
+                c.fill()
+                c.stroke();
+
+                if (size=="large"){
+                    c.beginPath()
+                        c.rect(430,385,20,30);
+                        c.closePath();
+
+                        c.rect(150,185,20,30);
+                        c.closePath();
+
+                        c.rect(385,150,30,20);
+                        c.closePath();
+
+                        c.rect(185,430,30,20);
+                        c.closePath();
+
+                        c.fillStyle = "#b54707";
+                        c.strokeStyle = "#e89a41";
+                        c.lineWidth = 2; 
+                        c.fill()
+                        c.stroke();
+                }
+
 
     }
     if (pineapple == 'yes'){
@@ -503,6 +543,46 @@ function drawToppings() {           // Start with a small and add larger sizes
 
     }
     if (donairMeat == 'yes'){
+        c.beginPath();
+                c.rect(200,325,20,30);
+                c.closePath();
+
+                c.rect(380,245,20,30);
+                c.closePath();
+
+                c.rect(325,380,30,20);
+                c.closePath();
+
+                c.rect(245,200,30,20);
+                c.closePath();
+
+                c.fillStyle = "#5e2504";
+                c.strokeStyle = "#3d1701";
+                c.lineWidth = 2; 
+                c.fill()
+                c.stroke();
+
+                if (size=="large"){
+                    c.beginPath()
+                        c.rect(150,385,20,30);
+                        c.closePath();
+
+                        c.rect(430,185,20,30);
+                        c.closePath();
+
+                        c.rect(385,430,30,20);
+                        c.closePath();
+
+                        c.rect(185,150,30,20);
+                        c.closePath();
+
+                        c.fillStyle = "#5e2504";
+                        c.strokeStyle = "#3d1701";
+                        c.lineWidth = 2; 
+                        c.fill()
+                        c.stroke();
+
+                }
 
     }
 }
