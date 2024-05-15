@@ -1,4 +1,4 @@
-main {
+    main {
     padding: 20px;
     }
     
@@ -25,4 +25,19 @@ main {
     width: 150px; 
     height: 150px; 
     margin: 10px;
+    }
+
+    @media all and (max-width:860px) {
+
+        .small-pizzas {
+            flex-wrap: wrap;
+            }
+
+    }
+
+    @media all and (max-width:600px) {
+
+        .small-pizzas {
+            flex-direction: column;
+            }
     }
