@@ -1,12 +1,15 @@
+    /*Created by Tiffany Liu and Matthew Lee*/
+    /*Edited Css from Original Document*/
+    
     main {
     padding: 20px;
     }
     
     .pizza-section {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center; 
     align-items: center;
+    flex-direction: column;
     }
     .pizza-section img {
     max-width: 100%; 
@@ -27,17 +30,35 @@
     margin: 10px;
     }
 
-    @media all and (max-width:860px) {
+    /*-----------------Added Css for FLexbox nesting------------*/
 
-        .small-pizzas {
+    
+    .outerGroup {
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: center; 
+        align-items: center;
+        }
+
+
+
+    @media all and (max-width:1100px) {
+
+        .innerGroup {
+            display: flex; 
             flex-wrap: wrap;
+            justify-content: center; 
+            align-items: center;
             }
 
     }
 
-    @media all and (max-width:600px) {
+    @media all and (max-width:580px) {
 
-        .small-pizzas {
-            flex-direction: column;
+
+
+        .innerGroup img{
+                margin-left:100px;
+                margin-right:100px;
             }
     }
