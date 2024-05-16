@@ -18,6 +18,8 @@ var bacon = 'no';
 var pineapple = 'no';
 var donairMeat = 'no';
 
+var cost = 0; //variable for cost
+
 let myMethodForm = document.forms["delivery"];      //Finds the forn with the desired name and gives it 
 myMethodForm.onchange = function(){order_method()}; //the "onchange" attribute to run the desired functions
 
@@ -43,6 +45,7 @@ function pizza_size () {                            //Function used to run throu
                         size= FindSize[i].value;    //Assigns the Size Variable the checked box value
             }
             console.log(size);
+            cost();
             drawCheckSize();
 }
 
@@ -51,20 +54,26 @@ function order_method() {                           //Function used to run throu
     var FindMethod = document.getElementsByName('delivery_method');
  
             for (i = 0; i < FindMethod.length; i++) {
-                if (FindMethod[i].checked)
+                if (FindMethod[i].checked) {
                 orderMethod= FindMethod[i].value;   //Assigns the orderMethod Variable the checked box value
             }
+        }
             console.log(orderMethod);
+            cost();
+
+
 }
 
 function  pizza_sauce () {                          //Function used to run through all radio buttons for the pizza sauce
     var FindSauce = document.getElementsByName('sauce');
     console.log("\nsauce function");
             for (i = 0; i < FindSauce.length; i++) {
-                if (FindSauce[i].checked)
+                if (FindSauce[i].checked) {
                         sauces= FindSauce[i].value; //Assigns the sauces Variable the checked box value
             }
+        }
             console.log(sauces); 
+            cost();
             drawCheckSize();  
         }
 
@@ -72,10 +81,12 @@ function cheese_YN () {                            //Function used to run throug
     console.log("\ncheese function");
     var FindCheese = document.getElementsByName('cheese');
             for (i = 0; i < FindCheese.length; i++) {
-                if (FindCheese[i].checked)
+                if (FindCheese[i].checked) {
                         cheese= FindCheese[i].value;    //Assigns the Size Variable the checked box value
             }
+        }
             console.log(size);
+            cost();
             drawCheckSize();
 }
 
@@ -119,30 +130,14 @@ function ingredients() {
                 donairMeat = 'no';
             }
             
+            cost();
             drawCheckSize();
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 //---------------------------------------------------------------------Canvas work-----------------------------------------------------------------------//
-
-
-
-
-
-
 
 
 
@@ -161,6 +156,7 @@ function drawCheckSize() {
     switch (size) {                 //Here I used cases for The different radio buttons to start the drawing
 
         case 'small': 
+
             console.log('smallpizza');         
             c.beginPath();
             c.arc(300,300,150,0,Math.PI*2);
@@ -186,6 +182,7 @@ function drawCheckSize() {
 
 
         case 'medium':
+
             console.log('mediumpizza');
             c.beginPath();
             c.arc(300,300,200,0,Math.PI*2);
@@ -211,6 +208,7 @@ function drawCheckSize() {
 
 
         case 'large':
+
             console.log('mediumpizza');
             c.beginPath();
             c.arc(300,300,250,0,Math.PI*2);
@@ -585,4 +583,55 @@ function drawToppings() {           // Start with a small and add larger sizes
                 }
 
     }
+}
+
+//-------------------------------cost--------------------------//
+
+
+function cost() {
+
+    cost=0;
+
+    if (ordermethod == "delivery") {
+        cost += 9
+    }
+
+    if (size == "small") {
+        cost += 11
+    }
+    
+    if (size == "medium") {
+        cost += 14
+    }
+
+    if (size == "large") {
+        cost += 17
+    }
+
+    if (pepperoni = 'yes'){   //Pepperoni;
+        cost += 0.75;
+    }
+
+    if (ham = 'yes'){   //Ham
+        cost += 0.75;
+    }
+
+
+    if (bacon = 'yes'){   //Bacon
+        cost += 1.5;
+    }
+
+
+    if (pineapple = 'yes'){   //Pineapple
+        cost += 0.75;
+    }
+
+
+    if (donairMeat = 'yes'){   //donairMeat
+        cost += 2;
+    }
+
+    document.getElementById('total').innerHTML=cost;
+    console.log(cost);
+
 }
