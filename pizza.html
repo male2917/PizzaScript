@@ -5,6 +5,7 @@ Created by Alex Stewart
 For Pizza Assignment
 Date April 29 2024
 -->
+<!-- edited copy-->
 <head>
     <title>Build Your Pizza</title>
     <meta charset=utf-8 />
@@ -112,8 +113,23 @@ Date April 29 2024
                 <label for="donair_meat">Donair Meat [+$2.00]</label>
             </form>
             <br>
-            <div id=cost name=cost>Cost:</div><div id=total name=total></div>
+            <span id=cost name=cost>Cost Breakdown [Tax Included]
+                <br>
+                <br>
+                <span>Delivery Method: <span id=Mtotal name=Mtotal></span></span>
+                <br>
+                <span>Size: <span id=Stotal name=Stotal></span></span>
+                <br>
+                <span>Toppings: <span id=Ttotal name=Ttotal></span></span>
+                <br>
+                <br>
+                <span>Total: <span id=total name=total></span></span>
+                <br>
+                <br>
+            </span>
+
             <button class="button">Add To Cart</button>
+
         </div>
         <div>
         <canvas id="pizzaCanvas" width="600" height="600"></canvas> 
