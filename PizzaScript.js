@@ -2,6 +2,8 @@
 //CMP621A
 //Started April 29th
 
+//Finished May 16th :') 
+
 console.log("Script Start")
 
 //-------------------------------------------------Obtaining Variables--------------------------------------------//
@@ -19,6 +21,9 @@ var pineapple = 'no';
 var donairMeat = 'no';
 
 var cost = 0; //variable for cost
+var methodCost = 0;
+var sizeCost = 0;
+var toppingCost = 0;
 
 let myMethodForm = document.forms["delivery"];      //Finds the forn with the desired name and gives it 
 myMethodForm.onchange = function(){order_method()}; //the "onchange" attribute to run the desired functions
@@ -45,7 +50,7 @@ function pizza_size () {                            //Function used to run throu
                         size= FindSize[i].value;    //Assigns the Size Variable the checked box value
             }
             console.log(size);
-            cost();
+            costMethod();
             drawCheckSize();
 }
 
@@ -59,7 +64,7 @@ function order_method() {                           //Function used to run throu
             }
         }
             console.log(orderMethod);
-            cost();
+            costMethod();
 
 
 }
@@ -73,7 +78,7 @@ function  pizza_sauce () {                          //Function used to run throu
             }
         }
             console.log(sauces); 
-            cost();
+            costMethod();
             drawCheckSize();  
         }
 
@@ -86,7 +91,7 @@ function cheese_YN () {                            //Function used to run throug
             }
         }
             console.log(size);
-            cost();
+            costMethod();
             drawCheckSize();
 }
 
@@ -130,7 +135,7 @@ function ingredients() {
                 donairMeat = 'no';
             }
             
-            cost();
+            costMethod();
             drawCheckSize();
 }
 
@@ -588,50 +593,65 @@ function drawToppings() {           // Start with a small and add larger sizes
 //-------------------------------cost--------------------------//
 
 
-function cost() {
+function costMethod() {
 
-    cost=0;
+    cost=0;//variable for cost reset
+    methodCost = 0;
+    sizeCost = 0;
+    toppingCost = 0;
 
-    if (ordermethod == "delivery") {
+    if (orderMethod == "delivery") {
         cost += 9
+        methodCost = 9;
     }
 
     if (size == "small") {
         cost += 11
+        sizeCost = 11;
     }
     
     if (size == "medium") {
         cost += 14
+        sizeCost = 14;
     }
 
     if (size == "large") {
         cost += 17
+        sizeCost = 17;
     }
 
-    if (pepperoni = 'yes'){   //Pepperoni;
+    if (pepperoni == 'yes'){   //Pepperoni;
         cost += 0.75;
+        toppingCost += 0.75;
     }
 
-    if (ham = 'yes'){   //Ham
+    if (ham == 'yes'){   //Ham
         cost += 0.75;
+        toppingCost += 0.75;
     }
 
 
-    if (bacon = 'yes'){   //Bacon
+    if (bacon == 'yes'){   //Bacon
         cost += 1.5;
+        toppingCost += 1.5;
     }
 
 
-    if (pineapple = 'yes'){   //Pineapple
+    if (pineapple == 'yes'){   //Pineapple
         cost += 0.75;
+        toppingCost += 0.75;
     }
 
 
-    if (donairMeat = 'yes'){   //donairMeat
+    if (donairMeat == 'yes'){   //donairMeat
         cost += 2;
+        toppingCost += 2;
     }
 
-    document.getElementById('total').innerHTML=cost;
+    document.getElementById('Mtotal').innerHTML="$"+methodCost;
+    document.getElementById('Stotal').innerHTML="$"+sizeCost;
+    document.getElementById('Ttotal').innerHTML="$"+toppingCost;
+    document.getElementById('total').innerHTML="$"+cost;
     console.log(cost);
 
 }
